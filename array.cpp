@@ -1,3 +1,5 @@
+//array declaration and printing the array elements
+
 #include<iostream>
 using namespace std;
 int main()
