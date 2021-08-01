@@ -1,4 +1,4 @@
-//find the record beaking days : (conditions: num should be greater than the next value  and greater than its previous value)
+//find the record breaking days : (conditions: num should be greater than the next value  and greater than its previous value)
 
 #include<iostream>
 using namespace std;
@@ -23,4 +23,4 @@ int main()
     cout<<"number of record breaking days are"<<endl;
     cout<<count<<endl;
     return 0;
-}
+} 
