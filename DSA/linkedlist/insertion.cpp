@@ -55,6 +55,19 @@ class Node{
 // }
 
 
+// insertion after a node 
+// -------------------------------------------------------
+Node *insertafterNode(Node *Head,int newdata,Node *prevNode)
+{
+    Node *ptr=new Node();
+    ptr->data=newdata;
+    ptr->next=prevNode->next;
+    prevNode->next=ptr;
+    
+    return Head;
+}
+
+
 void print(Node *ptr)
 {
     while (ptr != NULL)
@@ -85,7 +98,8 @@ third->next=NULL;
 
 // Head = inertathead(Head);
 // Head = insertbetween(Head,500,1);
-Head=insertatEnd(Head,800);
+// Head=insertatEnd(Head,800);
+Head=insertafterNode(Head,850,second);
 print(Head);
 return 0;
 
